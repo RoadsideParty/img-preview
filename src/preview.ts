@@ -62,3 +62,5 @@ class Preview {
         return true
     }
 }
+
+export default Preview

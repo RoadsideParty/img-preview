@@ -12,7 +12,19 @@
 <body>
     <img src="./src/test.jpg" class="img">
 </body>
-<script src="./dist/preview.js"></script>
+<!-- cjs only using in node env -->
+<!-- es -->
+<!-- <script type="module">
+    import Preview from './dist/preview.es.js'
+    new Preview(document.querySelector('.img'))
+</script> -->
+<!-- iife -->
+<!-- <script src="./dist/preview.umd.js"></script>
+<script>
+    new Preview(document.querySelector('.img'))
+</script> -->
+<!-- umd -->
+<script src="./dist/preview.umd.js"></script>
 <script>
     new Preview(document.querySelector('.img'))
 </script>

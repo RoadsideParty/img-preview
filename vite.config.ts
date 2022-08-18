@@ -5,8 +5,9 @@ module.exports = defineConfig({
     build: {
         lib: {
             entry: path.resolve(__dirname, 'src/preview.ts'),
-            name: 'index',
-            fileName: format => `index.${format}.js`
+            formats: ["es", "cjs", "umd", "iife"],
+            name: 'Preview',
+            fileName: (format: string) => `preview.${format}.js`
         }
     }
 })
